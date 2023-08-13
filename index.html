@@ -1,46 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wanderlust Adventures</title>
-  <link rel="stylesheet" href="Css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Explore Canada</title>
 </head>
 <body>
-  <header>
-    <h1>Wanderlust Adventures</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <section class="destination">
-    <h2>Popular Destinations</h2>
-    <div class="destination-list">
-      <div class="destination-item">
-        <img src="imgs/1.jpg" alt="Destination 1">
-        <h3>Beach Paradise</h3>
-        <p>Relax on the beautiful sandy beaches of the Caribbean.</p>
-      </div>
-      <div class="destination-item">
-        <img src="imgs/2.jpg" alt="Destination 2">
-        <h3>Mountain Retreat</h3>
-        <p>Explore the serene mountains and enjoy breathtaking views.</p>
-      </div>
-      <div class="destination-item">
-        <img src="imgs/3.jpg" alt="Destination 3">
-        <h3>City Adventure</h3>
-        <p>Experience the excitement of urban life in bustling cities.</p>
-      </div>
-    </div>
-  </section>
+    <a href="#" id="scroll-top">
+      <img src="imgs/up.png">
+    </a>
 
-  <footer>
-    <p>&copy; 2023 Wanderlust Adventures. All rights reserved.</p>
-  </footer>
+    <header id="header">
+        <nav>
+            <a href="#">Explore CA</a>
+
+            <div id="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                    <li><i id="theme-button"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div>
+                <h1>Explore the Beauty of Canada</h1>
+                <h2>Discover breathtaking landscapes<br> and vibrant cities.</h2>
+                <a href="#" class="button">Plan Your Trip</a>
+            </div>
+            <img src="imgs/home.jpg" alt="Canada Landscape">
+        </section>
+        
+        <section id="about">
+            <div>
+                <span>About Us</span>
+                <h2>Your Gateway to Canadian Adventures</h2>
+                <p>Embark on a journey to explore the rich cultural heritage, diverse wildlife, and natural wonders that Canada has to offer. Our mission is to make your travel experience unforgettable.</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+            <img src="imgs/canada.jpg" alt="About Canada">
+        </section>
+
+        <section id="destinations">
+            <span>Destinations</span>
+            <h2>Explore Amazing Places in Canada</h2>
+            <div>
+                <div>
+                    <img src="imgs/1.jpg" alt="Destination 1">
+                </div>
+                <div>
+                    <img src="imgs/2.jpg" alt="Destination 2">
+                </div>
+                <div>
+                    <img src="imgs/3.jpg" alt="Destination 3">
+                </div>
+            </div>
+        </section>
+
+        <section class="app">
+            <div>
+                <span>Plan Your Trip</span>
+                <h2>Explore with Our Travel App</h2>
+                <p>Download our travel app to get access to curated itineraries, local guides, and real-time updates. Enhance your travel experience and make the most of your journey across Canada.</p>
+                <div>
+                    <a href="#"><img src="imgs/001.jpg" alt="Travel App 1"></a>
+                    <a href="#"><img src="imgs/002.jpg" alt="Travel App 2"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div>
+                <span>Get in Touch</span>
+                <h2>Contact Us</h2>
+                <p>Have questions about your upcoming trip to Canada? Reach out to our friendly support team 24/7. We're here to assist you every step of the way.</p>
+            </div>
+            <div>
+                <a href="#" class="button">Contact Us Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="#">Explore Canada</a>
+            <span>Travel & Tourism</span>
+            <div>
+                <a href="#"><i></i></a>
+                <a href="#"><i></i></a>
+                <a href="#"><i></i></a>
+            </div>
+        </div>
+        <div>
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Travel Packages</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Accommodation</a></li>
+                <li><a href="#">Travel Guides</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Information</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Address</h3>
+            <ul>
+                <li>Toronto, Canada</li>
+                <li>123 Traveler's Way</li>
+                <li>+1 234-567-890</li>
+                <li>info@explorecanada.com</li>
+            </ul>
+        </div>
+        <p>&#169; 2023 Explore Canada. All rights reserved</p>
+    </footer>
 </body>
 </html>
