@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <title>Travel Enthusiasts</title>
+        <style>
+            /* Reset some default styles */
+            body,
+            h1,
+            h2,
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: "Golos Text", sans-serif;
+                background-color: #0a090f;
+                color: #efefe5;
+            }
+
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                border-bottom: 1px solid #353539;
+            }
+
+            .back-button {
+                display: block;
+                width: fit-content;
+                text-decoration: none;
+                color: #1a1a1a;
+                font-weight: 500;
+                background: #00afff;
+                padding: 12px 22px;
+                border-radius: 30px;
+                transition: 0.3s;
+            }
+
+            .back-button:hover {
+                background-color: #fff;
+                color: #000;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                padding: 20px;
+                padding-top: 50px;
+            }
+
+            .profile {
+                /* background-color: #161d38; */
+                padding: 20px;
+                width: calc(50% - 20px);
+                margin-bottom: 20px;
+                transition: transform 0.3s, box-shadow 0.3s;
+                display: flex;
+                align-items: center;
+                border-radius: 15px;
+                box-shadow: 0 0 0 1px #353539;
+            }
+
+            .profile:hover {
+                transform: translateY(-5px);
+            }
+
+            .profile img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+
+            .profile h2 {
+                font-size: 1.5rem;
+                color: #00afff;
+                margin-bottom: 10px;
+            }
+
+            .profile p {
+                font-size: 1rem;
+                color: #efefe5;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="back-button">Back to Home</a>
+            <h1>Meet the Travel Enthusiasts</h1>
+        </header>
+        <div class="container">
+            <div class="profile">
+                <img
+                    src="images/rutuben.jpg"
+                    alt="Rutuben Prafulkumar Kachhadia"
+                />
+                <div>
+                    <h2>Kachhadia Rutuben Prafulkumar</h2>
+                    <p>
+                        Passionate about exploring new places and capturing
+                        their beauty through photography.
+                    </p>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="images/ritul.jpg" alt="Ritulkumar Sureshbhai Patel" />
+                <div>
+                    <h2>Patel Ritulkumar Sureshbhai</h2>
+                    <p>
+                        Enthusiastic traveler and adventure seeker who loves to
+                        experience diverse cultures.
+                    </p>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="images/zeel.jpg" alt="Zeel Patel" />
+                <div>
+                    <h2>Patel Zeel</h2>
+                    <p>
+                        Travel enthusiast and food lover on a mission to
+                        discover hidden culinary gems around the world.
+                    </p>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="images/krunal.jpg" alt="Krunal Priyadarshi" />
+                <div>
+                    <h2>Priyadarshi Krunal</h2>
+                    <p>
+                        Nature lover and hiking enthusiast with a deep
+                        appreciation for the great outdoors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,355 @@
+body {
+    font-family: "Golos Text", sans-serif;
+    color: #efefe5;
+    background-color: #0a090f;
+    margin: 0;
+}
+
+/* ------ Typography ------ */
+h1 {
+    font-size: calc(1.525rem + 3.3vw);
+    margin-top: 0;
+}
+h2 {
+    font-size: calc(1.375rem + 1.5vw);
+    margin-top: 0;
+}
+h3 {
+    font-size: calc(1.3rem + 0.6vw);
+    margin-top: 0;
+}
+
+/* ------ Header ------ */
+
+header {
+    background: linear-gradient(0deg, #5f8d90, #161d38);
+}
+
+/* ------ Navbar ------ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px !important;
+}
+/* Logo styles */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #efefe5;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+.logo:hover {
+    transform: scale(2.1) rotate(10deg);
+    transform-origin: center;
+}
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #efefe5;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00afff;
+}
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 16px;
+}
+nav ul li a:hover {
+    filter: brightness(0.8);
+}
+/* Animation for underline on hover */
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #00afff;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links a:hover::before {
+    transform: scaleX(1);
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    background: #00afff;
+    padding: 12px 22px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.btn:hover {
+    filter: opacity(0.8);
+}
+
+.col-50 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.col-33 {
+    flex: 0 0 auto;
+    width: 33%;
+}
+
+.container {
+    padding: 0 16px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+.hero p {
+    line-height: 1.7;
+}
+.hero .btn {
+    margin-top: 32px;
+}
+.heroImg {
+    width: 100%;
+    margin-bottom: 100px;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+/* ------ Destinations ------ */
+.destinations {
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.destinations h2 {
+    text-align: center;
+    flex-basis: 100%;
+}
+.destinations .destination {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 400px;
+    margin: 10px;
+}
+.destinations .destination img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+}
+.destinations .destination .destination-body {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 10px 16px;
+    margin: 16px;
+    border-radius: 15px;
+}
+.destinations .destination .destination-body h3 {
+    margin-bottom: 16px;
+    margin: 0;
+}
+.destinations .destination .destination-body p {
+    margin-top: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    opacity: 0;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+.destinations .destination:hover .destination-body p {
+    height: auto;
+    margin-top: 16px;
+    opacity: 1;
+}
+
+/* ------ Process ------ */
+.process {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+.process h2 {
+    text-align: center;
+    flex-basis: 100%;
+}
+.process-item {
+    padding: 15px;
+    text-align: center;
+}
+.process-item .icon {
+    font-size: 32px;
+    padding: 5px;
+    background: rgb(255, 255, 255, 0.1);
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+/* ------ About ------ */
+.about-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.about-cols p{
+    line-height: 1.6;
+}
+
+/* ------ Contact ------ */
+.contact-section {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-group textarea {
+    resize: vertical;
+  }
+  
+  button.btn {
+    border: none;
+    font-family: inherit;
+  }
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+  }
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: #0a090f;
+    color: #efefe5;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00afff;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.footer-text a {
+    color: #00afff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-text a:hover {
+    color: #00afff;
+}
+
+@media (max-width: 768px) {
+    .col-50 {
+        width: 100%;
+    }
+    .col-33 {
+        width: 50%;
+    }
+    .about-cols{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 576px) {
+    .col-33 {
+        width: 100%;
+    }
+}
